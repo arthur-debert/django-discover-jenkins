@@ -34,7 +34,7 @@ class SlocCountTask(object):
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir)
             self.output = open(os.path.join(output_dir,
-                                            'sloccount.report'), 'w')
+                                            'sloccount.sc'), 'w')
 
     def teardown_test_environment(self, **kwargs):
         locations = get_app_locations()
